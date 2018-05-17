@@ -7,11 +7,13 @@ public class BasicAnnotation {
     @BeforeSuite
     public void beforeSuite(){
         System.out.println("BeforeSuit测试套件");
+        System.out.printf("Thread ID : %s%n" , Thread.currentThread().getId());
     }
 
     @AfterSuite
     public void afterSuite(){
         System.out.println("AfterSuite测试套件");
+        System.out.printf("Thread ID : %s%n" , Thread.currentThread().getId());
     }
 
     @BeforeClass
