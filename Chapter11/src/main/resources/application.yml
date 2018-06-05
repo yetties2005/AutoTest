@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+logging:
+  path: logs
+  file: mylog.log
+
+spring:
+  application:
+    name: myTest
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.17.73.40:3306/autotest
+    username: root
+    password: Hiyu2010
+
+mybatis:
+  type-aliases-package: com.sourse.model
+  mapper-locations:
+    - mapper/*
+
