@@ -5,7 +5,7 @@ import com.course.model.InterfaceName;
 import com.course.model.LoginCase;
 import com.course.utils.ConfigFile;
 import com.course.utils.DatabaseUtil;
-import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.ibatis.session.SqlSession;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -28,7 +28,7 @@ public class LoginTest {
         TestConfig.loginUrl = ConfigFile.getUrl(InterfaceName.LOGIN);
         TestConfig.updateUserInfoUrl = ConfigFile.getUrl(InterfaceName.UPDATEUSERINFO);
 
-        TestConfig.closeableHttpClient = HttpClientBuilder.create().build();
+        TestConfig.defaultHttpClient = new DefaultHttpClient();
 
     }
 
