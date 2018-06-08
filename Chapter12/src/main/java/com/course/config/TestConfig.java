@@ -1,7 +1,7 @@
 package com.course.config;
 
 import org.apache.http.client.CookieStore;
-import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.CloseableHttpClient;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,6 +17,6 @@ public class TestConfig {
     public static String getUserInfoUrl;
     public static String addUserUrl;
 
-    public static DefaultHttpClient defaultHttpClient;
+    public static CloseableHttpClient closeableHttpClient;
     public static CookieStore store;
 }
