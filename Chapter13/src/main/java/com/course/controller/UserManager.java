@@ -3,7 +3,7 @@ package com.course.controller;
 import com.course.modo.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,7 +24,7 @@ import java.util.Objects;
  * Date: 2018-06-09
  * Time: 下午12:51
  */
-@Log4j
+@Log4j2
 @RestController
 @Api(value = "v1",description = "用户管理系统")
 @RequestMapping("v1")
