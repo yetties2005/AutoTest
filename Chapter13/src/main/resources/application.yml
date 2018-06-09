@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+logging:
+  path: logs
+  file: mylog.log
+
+spring:
+  application:
+    name: userManager
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://35.185.162.237:3306/imooc?serverTimezone=GMT
+    username: web
+    password: fjkiiiu
+
+mybatis:
+  type-aliases-package: com.course.modl
+  mapper-locations:
+    - mapper/*
