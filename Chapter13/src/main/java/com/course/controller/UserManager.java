@@ -1,6 +1,6 @@
 package com.course.controller;
 
-import com.course.modo.User;
+import com.course.model.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j2;
